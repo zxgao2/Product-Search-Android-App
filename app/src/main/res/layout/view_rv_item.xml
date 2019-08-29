@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="400dp"
+    android:orientation="vertical">
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/cardView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <ImageView
+            android:id="@+id/productImage"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:adjustViewBounds="true"
+            android:maxWidth="150dp"
+            android:maxHeight="150dp"
+            android:minWidth="150dp"
+            android:minHeight="150dp"
+            android:scaleType="fitCenter"
+            android:textAlignment="center"
+            app:srcCompat="@drawable/shopping" />
+
+        <TextView
+            android:id="@+id/item_tv"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:layout_marginTop="150dp"
+            android:gravity="center"
+            android:lines="3"
+            android:textColor="#181717"
+            android:textDirection="locale"
+            android:textSize="18sp"
+            tools:text="item" />
+
+        <LinearLayout
+            android:layout_width="394dp"
+            android:layout_height="74dp"
+            android:layout_marginTop="300dp"
+            android:orientation="horizontal"
+            android:textAlignment="center">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/zip"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="TextView"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/ship"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:maxWidth="120dp"
+                    android:singleLine="false"
+                    android:text="TextView" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/wishbtn"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_marginStart="140dp"
+            android:layout_marginTop="300dp"
+            android:layout_weight="1"
+            android:adjustViewBounds="true"
+            android:maxWidth="100dp"
+            android:maxHeight="100dp"
+            android:minWidth="100dp"
+            android:minHeight="100dp"
+            android:onClick="addS"
+            android:textAlignment="center"
+            android:tint="#D9D0D0"
+            app:srcCompat="@drawable/cartplus" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="67dp"
+            android:layout_marginTop="380dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/condi"
+                android:layout_width="117dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="TextView"
+                android:textAlignment="textStart"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/price"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="TextView" />
+        </LinearLayout>
+
+    </android.support.v7.widget.CardView>
+
+</LinearLayout>

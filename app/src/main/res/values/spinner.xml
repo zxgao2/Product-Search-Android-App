@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="spingarr">
+        <item>All</item>
+        <item>Art</item>
+        <item>Bady</item>
+        <item>Books</item>
+        <item>Clothing,Shoes &amp; Accessories</item>
+        <item>Computers/Tablets &amp; Networking</item>
+        <item>Health &amp; Beauty</item>
+        <item>Music</item>
+        <item>Video Games &amp; Consoles</item>
+
+    </string-array>
+    <string-array name="spingarr1">
+        <item>Default</item>
+        <item>Name</item>
+        <item>Price</item>
+        <item>Days</item>
+
+
+    </string-array>
+    <string-array name="spingarr2">
+        <item>Ascending</item>
+        <item>Descending</item>
+
+    </string-array>
+</resources>

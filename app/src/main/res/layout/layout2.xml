@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F2F2F2"
+    android:fadingEdge="vertical"
+    android:scrollbars="vertical">
+    <LinearLayout
+        android:id="@+id/all2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#ffffff"
+        android:orientation="vertical"
+        android:scrollbars="vertical">
+
+        <TextView
+            android:id="@+id/soloby"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:drawableLeft="@drawable/truck"
+            android:drawableTint="#575454"
+            android:text="  Sold By"
+            android:textColor="#100F0F"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+
+        <TableLayout
+            android:id="@+id/sold"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:layout_marginStart="35dp"
+            android:layout_marginTop="5dp">
+
+
+        </TableLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="#DBD6D6" />
+
+
+        <TextView
+            android:id="@+id/shipp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:drawableLeft="@drawable/ferry"
+            android:drawableTint="#575454"
+            android:text="  Shipping Info"
+            android:textColor="#100F0F"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <TableLayout
+            android:id="@+id/shipinfo"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:layout_marginStart="35dp"
+            android:layout_marginTop="5dp">
+
+
+        </TableLayout>
+
+        <TextView
+            android:id="@+id/textView17"
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="#DBD6D6" />
+
+
+        <TextView
+            android:id="@+id/returnp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:drawableLeft="@drawable/dumptruck"
+            android:drawableTint="#575454"
+            android:text="  Return Policy"
+            android:textColor="#100F0F"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <TableLayout
+            android:id="@+id/returnpolicy"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:layout_marginStart="35dp"
+            android:layout_marginTop="5dp">
+
+
+        </TableLayout>
+
+        <TextView
+            android:id="@+id/textView16"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="TextView"
+            android:visibility="invisible" />
+
+
+    </LinearLayout>
+</ScrollView>

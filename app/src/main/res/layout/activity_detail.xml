@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:backgroundTint="#FF5722"
+    tools:context=".Detail">
+
+    <TextView
+        android:id="@+id/progresstext"
+        android:layout_width="wrap_content"
+        android:layout_height="27dp"
+        android:layout_marginStart="130dp"
+        android:layout_marginTop="130dp"
+        android:text="Searching Products..."
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        style="?android:attr/progressBarStyle"
+        android:layout_width="72dp"
+        android:layout_height="79dp"
+        android:layout_marginStart="148dp"
+        android:layout_marginTop="52dp"
+        android:backgroundTint="#673AB7"
+        android:foregroundTint="#673AB7"
+        android:indeterminateTint="#673AB7"
+        android:progressBackgroundTint="#673AB7"
+        android:progressTint="#673AB7"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <include
+        layout="@layout/layout_detitle"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="-181dp" />
+
+    <LinearLayout
+        android:id="@+id/linebar"
+        android:layout_width="420dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="50dp"
+        android:orientation="horizontal"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <Button
+            android:id="@+id/productbtn"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="#673AB7"
+            android:drawableTop="@drawable/informationvariant"
+            android:onClick="fraChange"
+            android:text="PRODUCT"
+            android:textColor="#D6CCCC" />
+
+        <Button
+            android:id="@+id/shipdetail"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="#673AB7"
+            android:drawableTop="@drawable/truckdelivery"
+            android:onClick="fraChange"
+            android:text="SHIPPING"
+            android:textColor="#9B7D7D" />
+
+        <Button
+            android:id="@+id/google"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="#673AB7"
+            android:drawableTop="@drawable/google"
+            android:onClick="fraChange"
+            android:text="PHOTOS"
+            android:textColor="#9B7D7D" />
+
+        <Button
+            android:id="@+id/similar"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="#673AB7"
+            android:drawableTop="@drawable/equal"
+            android:onClick="fraChange"
+            android:text="SIMILAR"
+            android:textColor="#9B7D7D" />
+    </LinearLayout>
+
+
+    <com.shehuan.niv.NiceImageView
+
+        android:layout_width="64dp"
+        android:layout_height="69dp"
+        android:layout_marginStart="324dp"
+        android:layout_marginTop="528dp"
+        android:elevation="10dp"
+        android:src="@drawable/cartplus"
+        app:border_color="#FF7F24"
+        app:border_width="4dp"
+        app:is_circle="true"
+        app:is_cover_src="true"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:mask_color="#FF5722"
+        app:tint="#F2F2F2" />
+
+    <ImageView
+        android:id="@+id/shopping"
+        android:layout_width="40dp"
+        android:layout_height="39dp"
+        android:layout_marginStart="336dp"
+        android:layout_marginTop="544dp"
+        android:elevation="15dp"
+        android:onClick="addCar"
+        android:tag="no"
+        android:tint="#F2F2F2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/cartplus" />
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/viewpager"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_marginTop="111dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+</android.support.constraint.ConstraintLayout>
